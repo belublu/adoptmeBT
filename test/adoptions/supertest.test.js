@@ -31,7 +31,7 @@ describe("Testing de la api Adoptme", () => {
         })
 
         it("Debe crear una nueva adopcion", async () => {
-            const petId = "673bba1357fdc790b72f1e6b"
+            const petId = "673bb97957fdc790b72f1e1a"
             const userId = "673bba1357fdc790b72f1e45"
             const res = await requester.post(`/api/adoptions/${userId}/${petId}`)
             console.log(res)
