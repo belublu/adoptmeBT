@@ -21,7 +21,7 @@ const generateData = async (req, res) => {
         // Genero las mascotas falsas
         const mockingPets = await MockingService.generateMockingPets(pets)
 
-        // Almaceno los datos nuevos en la BD
+        // Almaceno los datos de users y pets nuevos en la BD
         await Promise.all(
             mockingUsers.map(user => usersService.create(user)),
             mockingPets.map(pet => petsService.create(pet))
